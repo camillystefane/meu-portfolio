@@ -1,0 +1,166 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+:root{
+    --corverm:#591C21;
+    --corverc: #8C1F28;
+    --corver:#044040;
+    --corvermcl:#D92525;
+    --corcinza:#8b8b8b;
+    --corbranco:#ffffff;
+    --corverdes:#001111;
+}
+body{
+    background-color: var(--corverdes);
+}
+.interface{
+    max-width: 1380px;
+    padding: 0 4%;
+    margin: 0 auto;
+    
+}
+
+
+.foto-perfil{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    
+}
+button{
+    background-color: transparent;
+    border: 2px solid var(--corbranco);
+    border-radius: 8px;
+    color: var(--corbranco);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+button:hover{
+    background-color: var(--corverc);
+}
+h1.titulo-section{
+    font-size: 4rem;
+    color: var(--corbranco);
+
+}
+h1.titulo-section span{
+    color: var(--corvermcl);
+}
+/*  estitulo do cabeçalho*/
+
+    header{
+    background-color: transparent;
+    padding: 16px 0;
+    position: fixed;
+    width: 100%;
+        
+        
+    
+    }
+
+header>.interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header .logotipo-cabecalho img{
+    max-width:200px ;
+
+}
+header nav.menu-desktop ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 56px;
+}
+header nav.menu-desktop a{
+    color: var(--corbranco);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: .5s;
+
+}
+header nav.menu-desktop a:hover{
+    color: var(--corvermcl);
+
+}
+header nav.menu-desktop button{
+    width: 144px;
+    height: 48px;
+}
+/* estilo da hero*/ 
+
+
+section.hero{
+background-image: linear-gradient( to left, var(--corver), 70%,var(--corverm)30%);
+padding-top: 144px;
+}
+.hero > .interface{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+.hero .img-hero{
+    line-height: 0;
+}
+.hero .txt-hero h1{
+    font-size: 2rem;
+    color: var(--corbranco);
+    font-weight: 300;
+
+}
+.hero .txt-hero h1 span{
+    color: var(--corvermcl);
+    display: block;
+    font-weight: 800;
+    font-size: 3.5rem;
+}
+.hero .txt-hero p{
+    color: var(--corbranco);
+    line-height: 1.6;
+    font-size: 1.8rem;
+    margin: 30px 0;
+}
+.hero .txt-hero button{
+    width: 300px;
+    height: 50px;
+    margin: 5px;
+
+}
+/* sobre mim */
+
+section.sobre-mim{
+    padding: 80px 0;
+
+}
+.sobre-mim > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 96px;
+}
+.sobre-mim .txt-sobre p{
+    color: var(--corcinza);
+    text-align: justify;
+    line-height: 2;
+    margin: 24px 0;
+    font-size: 20px;
+}
+.sobre-mim .btn-redes button{
+    width: 58px;
+    height: 58px;
+    font-size: 24px;
+    margin-right: 8px;
+}
+.sobre-mim .img-sobre img{
+    border-radius: 20px ;
+    height: auto;
+    width: 400px;
+}
+
